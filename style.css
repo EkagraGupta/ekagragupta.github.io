@@ -268,7 +268,7 @@ section {
 }
 
 .about-containers {
-  gap: 2rem;
+  gap: 1rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
@@ -366,8 +366,8 @@ article .icon {
 
 .project-img {
   border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  width: 70%;
+  height: 70%;
 }
 
 .project-title {
