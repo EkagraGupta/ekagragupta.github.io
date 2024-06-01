@@ -265,10 +265,12 @@ section {
 
 #about {
   position: relative;
+  padding-top: 4vh; /* Adjust as needed */
+  margin: 0 10rem; /* Ensure this matches other sections */
 }
 
 .about-containers {
-  gap: 1rem;
+  gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
@@ -303,9 +305,15 @@ section {
   text-align: center;
 }
 
-.section-container {
+/* .section-container {
   gap: 4rem;
   height: 80%;
+} */
+
+.section-container {
+  display: flex;
+  gap: 4rem;
+  height: auto; /* Allow height to adjust based on content */
 }
 
 .section__pic-container {
