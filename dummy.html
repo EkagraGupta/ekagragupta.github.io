@@ -269,3 +269,205 @@
     margin: 2rem auto; /* Center it horizontally */
     display: block;    /* Ensure it displays as a block element */
   }
+
+
+
+
+
+
+
+
+
+
+  <div class="experience-card">
+    <div class="card-header">
+      <h2 class="experience-sub-title">Internship</h2>
+      <p class="company-name">Bosch Center for Artificial Intelligence</p>
+      <p class="duration">Renningen, DE | Nov 2023 - Apr 2024</p>
+    </div>
+    <div class="card-body">
+      <!-- <p class="experience-summary">
+        Worked on benchmarking and analyzing perception models for autonomous driving scenarios, utilizing advanced machine learning techniques and GPU acceleration.
+      </p> -->
+      <ul class="experience-highlights">
+        <li>Simulated real-world variations in the nuScenes dataset to evaluate model performance.</li>
+        <li>Reduced inference time by 40% using NVIDIA A100/V100 GPUs.</li>
+        <li>Identified key corner cases by benchmarking models like StreamPETR and FAR3D.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="experience-card">
+    <div class="card-header">
+      <h2 class="experience-sub-title">Working Student</h2>
+      <p class="company-name">Daimler Truck AG</p>
+      <p class="duration">Stuttgart, DE | February 2023 - October 2023</p>
+    </div>
+    <div class="card-body">
+      <!-- <p class="experience-summary">
+        Worked on benchmarking and analyzing perception models for autonomous driving scenarios, utilizing advanced machine learning techniques and GPU acceleration.
+      </p> -->
+      <ul class="experience-highlights">
+        <li>Enhanced MoLaSim (in-house engine mount analysis tool) by integrating VBA scripts, improving the analysis speed by 25%
+          and enhancing the user interface, resulting in a 15% increase in usability based on internal feedback.</li>
+        <li>Automated Simpack (multi-body simulation tool) workflows by creating custom Python scripts, reducing data export time
+          by 30%, and improving data accuracy by 10%, leading to more efficient simulations in daily operations.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="experience-card">
+    <div class="card-header">
+      <h2 class="experience-sub-title">Student Assistant</h2>
+      <p class="company-name">Fraunhofer IPA</p>
+      <p class="duration">Stuttgart, DE | April 2023 - September 2023</p>
+    </div>
+    <div class="card-body">
+      <!-- <p class="experience-summary">
+        Worked on benchmarking and analyzing perception models for autonomous driving scenarios, utilizing advanced machine learning techniques and GPU acceleration.
+      </p> -->
+      <ul class="experience-highlights">
+        <li>Conducted comprehensive literature research and analyzed data from over 50 sources to forecast commodity price trends.</li>
+        <li>Engineered a Python-based dashboard for transport route monitoring, integrating real-time data from 10+ sources and
+          enhancing system functionality by 30%.</li>
+        <li>Independently developed a route planning module that reduced transport planning time by 20% and improved route
+          optimization by 15%.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="experience-card">
+    <div class="card-header">
+      <h2 class="experience-sub-title">Student Assistant</h2>
+      <p class="company-name">GreenTeam Uni Stuttgart</p>
+      <p class="duration">Stuttgart, DE | November 2022 - March 2023</p>
+    </div>
+    <div class="card-body">
+      <!-- <p class="experience-summary">
+        Worked on benchmarking and analyzing perception models for autonomous driving scenarios, utilizing advanced machine learning techniques and GPU acceleration.
+      </p> -->
+      <ul class="experience-highlights">
+        <li>Contributed to the development of a driverless race car for international Formula Student Electric competitions.</li>
+        <li>Implemented vehicle pose estimation using perception data through C++ and ROS2.</li>
+        <li>Enhanced a landmark-based pose-graph mapping system, enhancing the precision of vehicle localization by 20%</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="experience-card">
+    <div class="card-header">
+      <h2 class="experience-sub-title">Student Research Assistant</h2>
+      <p class="company-name">Universität Stuttgart IPA</p>
+      <p class="duration">Stuttgart, DE | January 2022 - September 2022</p>
+    </div>
+    <div class="card-body">
+      <!-- <p class="experience-summary">
+        Worked on benchmarking and analyzing perception models for autonomous driving scenarios, utilizing advanced machine learning techniques and GPU acceleration.
+      </p> -->
+      <ul class="experience-highlights">
+        <li>Designed and simulated equivalent circuit models of Li-ion batteries using MatLab/Simulink, achieving a 95% correlation
+          with experimental data.</li>
+        <li>Implemented and evaluated multiple algorithms for estimating State of Charge (SoC) and State of Health (SoH) degradation.</li>
+        <li>Characterized and parameterized Li-ion cells across a temperature range of -20 degC to +60 degC using Distribution of Relaxation
+          Time (DRT) from synthetic Electrochemical Impedance Spectroscopy (EIS) data.</li>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+
+
+/* General section styling */
+#skills {
+  padding: 50px 20px; 
+  padding-top: 10rem; /* Adjust padding for better spacing */
+  margin: 0 auto; /* Center section */
+  height: auto; /* Dynamic height */
+  overflow: hidden; /* Prevent overflow */
+  box-sizing: border-box;
+  position: relative;
+  background-color: #f9f9f9; /* Subtle light background */
+}
+
+/* Container styling */
+.experience-details-container {
+  max-width: 1200px; /* Limit content width */
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap; /* Allows for responsive stacking */
+  gap: 2rem; /* Space between containers */
+}
+
+/* Details container */
+.details-container {
+  flex: 1 1 300px; /* Responsive sizing */
+  background: white; /* White background for the details */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 1.5rem; /* Inner padding */
+  transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+}
+
+.details-container:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Title styling */
+.experience-sub-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333; /* Dark gray for the title */
+  margin-bottom: 1rem; /* Space below title */
+}
+
+/* Article container for skill items */
+.article-container {
+  display: flex;
+  flex-direction: column; /* Stack skills vertically */
+  gap: 1rem; /* Space between each skill item */
+}
+
+/* Article styling */
+article {
+  display: flex; /* Flex for icon and text */
+  align-items: center; /* Center align items */
+}
+
+/* Icon styling */
+.icon {
+  width: 20px; /* Uniform icon size */
+  height: auto; /* Keep aspect ratio */
+  margin-right: 10px; /* Space between icon and text */
+}
+
+/* Heading for each skill */
+h3 {
+  font-size: 1.1rem; /* Slightly larger font for skill names */
+  color: #444; /* Darker gray for skill names */
+  margin: 0; /* Reset margin */
+}
+
+/* Paragraph for skill levels */
+p {
+  font-size: 0.9rem; /* Smaller font for skill levels */
+  color: #666; /* Medium gray for levels */
+  margin: 0; /* Reset margin */
+}
+
+/* Arrow icon styling */
+.arrow {
+  position: absolute; 
+  right: 0; /* Position at the right */
+  bottom: 2rem; /* Adjust bottom position */
+  cursor: pointer; /* Change cursor to pointer */
+  width: 40px; /* Uniform size for the arrow */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Additional responsiveness */
+@media (max-width: 600px) {
+  .experience-details-container {
+    flex-direction: column; /* Stack vertically on small screens */
+  }
+}

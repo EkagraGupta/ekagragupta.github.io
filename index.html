@@ -16,6 +16,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -32,6 +33,7 @@
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
@@ -70,12 +72,12 @@
           />
         </div>
       </div>
-      <img
+      <!-- <img
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#about'"
-      />
+      /> -->
     </section>
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
@@ -90,7 +92,7 @@
         </div>
         <div class="about-details-container">
           <div class="about-containers">
-            <div class="details-container">
+            <!-- <div class="details-container">
               <img
                 src="./assets/experience.png"
                 alt="Experience icon"
@@ -98,8 +100,8 @@
               />
               <h3>Experience</h3>
               <p>1+ years <br />Machine Learning and Computer Vision</p>
-            </div>
-            <div class="details-container">
+            </div> -->
+            <div class="another-details-container">
               <img
                 src="./assets/education.png"
                 alt="Education icon"
@@ -121,13 +123,189 @@
           </div>
         </div>
       </div>
-      <img
+      <!-- <img
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#skills'"
-      />
+        onclick="location.href='./#experience'"
+      /> -->
     </section>
+    <section id="experience">
+      <h1 class="title">Experience</h1>
+      <div class="experience-cards-container">
+        
+        <!-- Bosch Experience -->
+        <div class="experience-card">
+          <div class="experience-header">
+            <div class="experience-info">
+              <div class="experience-sub-title">Internship</div>
+              <div class="company-name">Bosch Center for Artificial Intelligence</div>
+            </div>
+            <div class="duration">Renningen, DE | Nov 2023 - Apr 2024</div>
+          </div>
+          
+          <!-- Details revealed on hover -->
+          <div class="card-body">
+            <ul class="experience-highlights">
+              <li>Benchmarked detection accuracy and robustness of perception models in autonomous driving scenarios, utilizing vision
+                transformers like StreamPETR, FAR3D, and FIERY (static and temporal)</li>
+              <li>Simulated real-world variations in the nuScenes dataset with corruptions (e.g. Gaussian noise, frost) and instance
+                manipulations (e.g. object scaling from 1.0× to 2.0×), achieving 100% object isolation accuracy for precise data processing.</li>
+              <li>Leveraged NVIDIA A100 and V 100 GPUs for evaluation, reducing inference time by up to 40% while identifying key corner
+                cases in model performance.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="experience-card">
+          <div class="experience-header">
+            <div class="experience-info">
+              <div class="experience-sub-title">Working Student</div>
+              <div class="company-name">Daimler Truck AG</div>
+            </div>
+            <div class="duration">Stuttgart, DE | Feb 2023 - Oct 2023</div>
+          </div>
+          
+          <!-- Details revealed on hover -->
+          <div class="card-body">
+            <ul class="experience-highlights">
+              <li>Enhanced MoLaSim (in-house engine mount analysis tool) by integrating VBA scripts, improving the analysis speed by 25%
+                and enhancing the user interface, resulting in a 15% increase in usability based on internal feedback.</li>
+              <li>Automated Simpack (multi-body simulation tool) workflows by creating custom Python scripts, reducing data export time
+                by 30%, and improving data accuracy by 10%, leading to more efficient simulations in daily operations.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="experience-card">
+          <div class="experience-header">
+            <div class="experience-info">
+              <div class="experience-sub-title">Student Assistant</div>
+              <div class="company-name">Fraunhofer IPA</div>
+            </div>
+            <div class="duration">Stuttgart, DE | Ap 2023 - Sep 2023</div>
+          </div>
+          
+          <!-- Details revealed on hover -->
+          <div class="card-body">
+            <ul class="experience-highlights">
+              <li>Conducted comprehensive literature research and analyzed data from over 50 sources to forecast commodity price trends.</li>
+              <li>Engineered a Python-based dashboard for transport route monitoring, integrating real-time data from 10+ sources and
+                enhancing system functionality by 30%.</li>
+              <li>Independently developed a route planning module that reduced transport planning time by 20% and improved route
+                optimization by 15%.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="experience-card">
+          <div class="experience-header">
+            <div class="experience-info">
+              <div class="experience-sub-title">Student Assistant</div>
+              <div class="company-name">GreenTeam Uni Stuttgart</div>
+            </div>
+            <div class="duration">Stuttgart, DE | Nov 2022 - Mar 2023</div>
+          </div>
+          
+          <!-- Details revealed on hover -->
+          <div class="card-body">
+            <ul class="experience-highlights">
+              <li>Contributed to the development of a driverless race car for international Formula Student Electric competitions.</li>
+              <li>Implemented vehicle pose estimation using perception data through C++ and ROS2.</li>
+              <li>Enhanced a landmark-based pose-graph mapping system, enhancing the precision of vehicle localization by 20%</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="experience-card">
+          <div class="experience-header">
+            <div class="experience-info">
+              <div class="experience-sub-title">Student Research Assistant</div>
+              <div class="company-name">Universität Stuttgart IPA</div>
+            </div>
+            <div class="duration">Stuttgart, DE | Jan 2022 - Sep 2022</div>
+          </div>
+          
+          <!-- Details revealed on hover -->
+          <div class="card-body">
+            <ul class="experience-highlights">
+              <li>Designed and simulated equivalent circuit models of Li-ion batteries using MatLab/Simulink, achieving a 95% correlation
+                with experimental data.</li>
+              <li>Implemented and evaluated multiple algorithms for estimating State of Charge (SoC) and State of Health (SoH) degradation.</li>
+              <li>Characterized and parameterized Li-ion cells across a temperature range of -20 degC to +60 degC using Distribution of Relaxation
+                Time (DRT) from synthetic Electrochemical Impedance Spectroscopy (EIS) data.</li>
+            </ul>
+          </div>
+        </div>
+      
+      <!-- <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#skills'"
+    /> -->
+    </section>
+
+    <section id="publications">
+      <p class="section__text__p1">Research Contributions</p>
+      <h1 class="title">Publications</h1>
+      <div class="publication-container">
+        <div class="publication-card">
+          <div class="card-header">
+            <h2 class="publication-title">
+              <a href="https://www.arxiv.org/abs/2409.03598" target="_blank">
+                <i class="fas fa-file-alt"></i> 
+                Towards a Practical Evaluation of Adversarial Robustness of Machine Learning Classifiers
+              </a>
+            </h2>
+            <p class="publication-source">Proceeding IMECE 2024</p>
+          </div>
+          <div class="card-body">
+            <ul class="publication-highlights">
+              <li>Developed a novel adversarial distance estimation algorithm using iterative attacks.</li>
+              <li>Achieved up to 30-40% tighter perturbation bounds compared to traditional methods.</li>
+              <li>Presented at IMECE 2024, showcasing improved robustness evaluation.</li>
+            </ul>
+            <p class="github-link">
+              <a href="LINK_TO_YOUR_GITHUB_REPO" target="_blank">
+                <i class="fab fa-github"></i> 
+                View on GitHub
+              </a>
+            </p>
+          </div>
+        </div>
+    
+        <div class="publication-card">
+          <div class="card-header">
+            <h2 class="publication-title">
+              <a href="https://www.researchgate.net/publication/361974656_Design_of_circularly_polarized_irregular_octagonal_shaped_and_dumbbell_slotted_planar_and_conformal_patch_antenna" target="_blank">
+                <i class="fas fa-file-alt"></i> 
+                Design of Circularly Polarized Irregular Octagonal Shaped and Dumbbell Slotted Antennas
+              </a>
+            </h2>
+            <p class="publication-source">SCI 2021</p>
+          </div>
+          <div class="card-body">
+            <ul class="publication-highlights">
+              <li>Designed circularly polarized planar and conformal patch antennas.</li>
+              <li>Optimized polarization and impedance bandwidth for high-frequency applications.</li>
+              <li>Highlighted robust circular polarization in various configurations.</li>
+            </ul>
+            <p class="github-link">
+              <a href="LINK_TO_YOUR_GITHUB_REPO" target="_blank">
+                <i class="fab fa-github"></i> 
+                View on GitHub
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    
+    
     <section id="skills">
       <p class="section__text__p1">Take a Look At My</p>
       <h1 class="title">Skills</h1>
@@ -138,7 +316,7 @@
             <div class="article-container">
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/git_icon.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -149,7 +327,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/ibm_lsf_icon.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -160,7 +338,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/pytorch_icon.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -171,7 +349,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/tensorflow_icon.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -182,7 +360,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/simulink_icon.png"
                   alt="Checkmark icon"
                   class="icon"
                 />
@@ -193,7 +371,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/simpack_icon.png"
                   alt="Checkmark icon"
                   class="icon"
                 />
@@ -209,7 +387,7 @@
             <div class="article-container">
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/python_icon.png"
                   alt="Checkmark icon"
                   class="icon"
                 />
@@ -220,7 +398,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/matlab_icon.png"
                   alt="Checkmark icon"
                   class="icon"
                 />
@@ -231,7 +409,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/cpp_icon.png"
                   alt="Checkmark icon"
                   class="icon"
                 />
@@ -242,7 +420,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/aws_sagemaker.png"
                   alt="Checkmark icon"
                   class="icon"
                 />
@@ -253,7 +431,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/linux_ixon.png"
                   alt="Checkmark icon"
                   class="icon"
                 />
@@ -264,7 +442,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/ros2_icon.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -277,12 +455,12 @@
           </div>
         </div>
       </div>
-      <img
+      <!-- <img
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#projects'"
-      />
+      /> -->
     </section>
     
     <section id="projects">
@@ -298,7 +476,7 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Forschungsarbeit</h2>
+            <h2 class="project-title">Research Project</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -316,7 +494,7 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Metrics for adversarial robustness</h2>
+            <h2 class="project-title">Metrics for Adversarial Robustness</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -328,12 +506,12 @@
           </div>
         </div>
       </div>
-      <img
+      <!-- <img
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#contact'"
-      />
+      /> -->
     </section>
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
