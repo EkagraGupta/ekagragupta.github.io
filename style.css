@@ -66,6 +66,29 @@ a:hover {
   cursor: default;
 }
 
+
+
+/* General style for the arrow */
+.arrow {
+  width: 40px; /* Size of the arrow */
+  height: 40px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000; /* Makes sure the arrow stays on top */
+  cursor: pointer;
+}
+
+.arrow:hover {
+  transform: scale(1.1); /* Enlarge on hover */
+  transition: transform 0.3s ease-in-out;
+}
+
+.arrow img {
+  filter: invert(100%); /* Turns the arrow black */
+}
+
+
 /* HAMBURGER MENU */
 
 #hamburger-nav {
@@ -465,15 +488,11 @@ footer p {
 /* General section styling */
 #skills {
   padding: 50px 20px; 
-  padding-bottom: 20rem;
-  margin: 0 auto; /* Center section */
-  height: auto; /* Dynamic height */
-  /* overflow: hidden; Prevent overflow */
-  box-sizing: border-box;
-  position: relative;
-  background-color: white; /* Subtle light background */
+  margin: 0 auto;
+  background-color: white;
+  position: relative; /* Ensure relative positioning for arrow */
+  min-height: 100vh; /* Ensure the section takes full height of the viewport */
 }
-
 /* Container styling */
 .experience-details-container {
   max-width: 1200px; /* Limit content width */
@@ -659,19 +678,24 @@ p {
   margin-bottom: 2rem; /* Adjusted to give space between the title and cards */
 }
 
-.arrow {
+#skills .arrow {
   position: absolute;
-  right: -5rem;
-  bottom:0;
+  right: 20px; /* Adjust arrow positioning */
+  bottom: 20px; /* Space from bottom */
+  width: 40px;
+  height: auto;
+  cursor: pointer;
 }
+/* General section styling */
+/* General section styling */
 
-/* General section styling */
-/* General section styling */
 #publications {
   padding: 50px 20px; 
   margin: 0 auto; /* Center section */
   background-color: white; /* White background */
   margin-top: 20rem;
+  position: relative; /* Ensure relative positioning for arrow */
+  min-height: 100vh; /* Ensure the section takes full height of the viewport */
 }
 
 /* Publication container styling */
@@ -680,6 +704,7 @@ p {
   flex-wrap: wrap; /* Allow wrapping of cards */
   gap: 2rem; /* Space between cards */
 }
+
 
 /* Publication card styling */
 .publication-card {
@@ -747,4 +772,32 @@ p {
   .publication-card {
     flex: 1 1 100%; /* One card per row on small screens */
   }
+}
+
+/* Arrow styling for consistency */
+.arrow {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 20px; /* Uniform right positioning */
+  bottom: 20px; /* Uniform bottom positioning */
+  z-index: 1000; /* Ensures it stays on top */
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.arrow:hover {
+  transform: scale(1.1); /* Uniform hover effect */
+}
+
+/* Skills section arrow positioning */
+#skills .arrow {
+  right: 180px; /* Same as general arrow */
+  bottom: 60px; /* Same as general arrow */
+}
+
+/* Publications section arrow positioning */
+#publications .arrow {
+  right: 180px; /* Same as general arrow */
+  bottom: 60px; /* Same as general arrow */
 }
