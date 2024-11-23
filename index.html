@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ekagra's Portfolio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
@@ -14,8 +14,6 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#publications">Publications</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -32,9 +30,7 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#publications" onclick="toggleMenu()">Publications</a></li>
-          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">skills</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
@@ -47,7 +43,7 @@
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Ekagra Gupta</h1>
-        <!-- <p class="section__text__p2">Frontend Developer</p> -->
+        <p class="section__text__p2">Graduate ML Enthusiast</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
@@ -64,7 +60,7 @@
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://www.linkedin.com/in/ekagra-gupta-119003177?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BQM1ifiSfQROv6ec895jCsg%3D%3D'"
+            onclick="location.href='https://www.linkedin.com/in/ekagra-gupta-119003177/'"
           />
           <img
             src="./assets/github.png"
@@ -74,19 +70,6 @@
           />
         </div>
       </div>
-      <!-- <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#about'"
-      /> -->
-      <img
-  src="./assets/arrow.png"
-  alt="Arrow icon"
-  class="icon arrow"
-  onclick="scrollToNextSection(this)"
-/>
-
     </section>
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
@@ -101,265 +84,50 @@
         </div>
         <div class="about-details-container">
           <div class="about-containers">
-            <div class="another-details-container">
+            <!-- <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend Development</p>
+            </div> -->
+            <div class="details-container">
               <img
                 src="./assets/education.png"
                 alt="Education icon"
                 class="icon"
               />
               <h3>Education</h3>
-              <p>M.Sc. Electrical Engineering<br />B.Tech. Electronics and Communication Engineering</p>
+              <p>B.Tech. Electronics and Communication Engineering<br />M.Sc. Electrical Engineering (Smart Systems)</p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              I'm driven by a deep curiosity and a passion for turning complex problems into innovative solutions. With a strong foundation in electronics 
-              and a fascination with artificial intelligence, I'm always exploring how technology can stretch the limits—from autonomous systems to the
-              future of space exploration. Every project is a chance to learn, grow, and contribute something meaningful. When I'm not coding, you'll find
-              me cycling, always seeking fresh perspectives and new horizons.
-            </p>
+              I am a Master's student in Electrical Engineering at Universität Stuttgart, currently completing my thesis at the Institut für Automatisierungstechnik und Softwaresysteme (IAS), focusing on soft labeling in image classifiers. With over two years of diverse experience in machine learning, deep learning, and computer vision, I have contributed to impactful projects in autonomous systems and industrial applications. During my internship at Bosch Center for Artificial Intelligence, I evaluated advanced vision transformers through data manipulation in real-world scenarios, while at Daimler Truck AG, I developed custom scripts and VBA integrations to optimize simulation tools. At Fraunhofer IPA, I have enhanced transport monitoring systems and currently focus on object detection in computer vision projects. Proficient in Python, C++, and Matlab, with expertise in PyTorch and TensorFlow, I have applied my skills to Li-ion battery modeling, driverless systems, and robustness evaluation in machine learning, presenting findings on adversarial distance estimation at IMECE 2024.            </p>
           </div>
         </div>
       </div>
       <img
-  src="./assets/arrow.png"
-  alt="Arrow icon"
-  class="icon arrow"
-  onclick="scrollToNextSection(this)"
-/>
-
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
     </section>
-    <section id="experience">
-      <h1 class="title">Experience</h1>
-      <div class="experience-cards-container">
-        
-        <!-- Fraunhofer Experience -->
-        <div class="experience-card">
-          <div class="experience-header">
-            <div class="experience-info">
-              <div class="experience-sub-title">Student Assistant</div>
-              <div class="company-name">Fraunhofer IPA</div>
-            </div>
-            <div class="duration">Stuttgart, DE | August 2024 - Present</div>
-          </div>
-          
-          <!-- Details revealed on hover -->
-          <div class="card-body">
-            <ul class="experience-highlights">
-              <li>Currently working on automating defect labeling in high-resolution manufacturing images using models like YOLOv5, SAM, and SAM2 for bounding box and mask generation.</li>
-              <li>Streamlining the labeling workflow to enhance efficiency and ensure high-quality datasets for defect detection model training.</li>
-            </ul>
-          </div>
-        </div>
-        <!-- Bosch Experience -->
-        <div class="experience-card">
-          <div class="experience-header">
-            <div class="experience-info">
-              <div class="experience-sub-title">Internship</div>
-              <div class="company-name">Bosch Center for Artificial Intelligence</div>
-            </div>
-            <div class="duration">Renningen, DE | Nov 2023 - Apr 2024</div>
-          </div>
-          
-          <!-- Details revealed on hover -->
-          <div class="card-body">
-            <ul class="experience-highlights">
-              <li>Benchmarked detection accuracy and robustness of perception models in autonomous driving scenarios, utilizing vision
-                transformers like StreamPETR, FAR3D, and FIERY (static and temporal)</li>
-              <li>Simulated real-world variations in the nuScenes dataset with corruptions (e.g. Gaussian noise, frost) and instance
-                manipulations (e.g. object scaling from 1.0× to 2.0×), achieving 100% object isolation accuracy for precise data processing.</li>
-              <li>Leveraged NVIDIA A100 and V 100 GPUs for evaluation, reducing inference time by up to 40% while identifying key corner
-                cases in model performance.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="experience-card">
-          <div class="experience-header">
-            <div class="experience-info">
-              <div class="experience-sub-title">Working Student</div>
-              <div class="company-name">Daimler Truck AG</div>
-            </div>
-            <div class="duration">Stuttgart, DE | Feb 2023 - Oct 2023</div>
-          </div>
-          
-          <!-- Details revealed on hover -->
-          <div class="card-body">
-            <ul class="experience-highlights">
-              <li>Enhanced MoLaSim (in-house engine mount analysis tool) by integrating VBA scripts, improving the analysis speed by 25%
-                and enhancing the user interface, resulting in a 15% increase in usability based on internal feedback.</li>
-              <li>Automated Simpack (multi-body simulation tool) workflows by creating custom Python scripts, reducing data export time
-                by 30%, and improving data accuracy by 10%, leading to more efficient simulations in daily operations.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="experience-card">
-          <div class="experience-header">
-            <div class="experience-info">
-              <div class="experience-sub-title">Student Assistant</div>
-              <div class="company-name">Fraunhofer IPA</div>
-            </div>
-            <div class="duration">Stuttgart, DE | Ap 2023 - Sep 2023</div>
-          </div>
-          
-          <!-- Details revealed on hover -->
-          <div class="card-body">
-            <ul class="experience-highlights">
-              <li>Conducted comprehensive literature research and analyzed data from over 50 sources to forecast commodity price trends.</li>
-              <li>Engineered a Python-based dashboard for transport route monitoring, integrating real-time data from 10+ sources and
-                enhancing system functionality by 30%.</li>
-              <li>Independently developed a route planning module that reduced transport planning time by 20% and improved route
-                optimization by 15%.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="experience-card">
-          <div class="experience-header">
-            <div class="experience-info">
-              <div class="experience-sub-title">Student Assistant</div>
-              <div class="company-name">GreenTeam Uni Stuttgart</div>
-            </div>
-            <div class="duration">Stuttgart, DE | Nov 2022 - Mar 2023</div>
-          </div>
-          
-          <!-- Details revealed on hover -->
-          <div class="card-body">
-            <ul class="experience-highlights">
-              <li>Contributed to the development of a driverless race car for international Formula Student Electric competitions.</li>
-              <li>Implemented vehicle pose estimation using perception data through C++ and ROS2.</li>
-              <li>Enhanced a landmark-based pose-graph mapping system, enhancing the precision of vehicle localization by 20%</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="experience-card">
-          <div class="experience-header">
-            <div class="experience-info">
-              <div class="experience-sub-title">Student Research Assistant</div>
-              <div class="company-name">Universität Stuttgart IPA</div>
-            </div>
-            <div class="duration">Stuttgart, DE | Jan 2022 - Sep 2022</div>
-          </div>
-          
-          <!-- Details revealed on hover -->
-          <div class="card-body">
-            <ul class="experience-highlights">
-              <li>Designed and simulated equivalent circuit models of Li-ion batteries using MatLab/Simulink, achieving a 95% correlation
-                with experimental data.</li>
-              <li>Implemented and evaluated multiple algorithms for estimating State of Charge (SoC) and State of Health (SoH) degradation.</li>
-              <li>Characterized and parameterized Li-ion cells across a temperature range of -20 degC to +60 degC using Distribution of Relaxation
-                Time (DRT) from synthetic Electrochemical Impedance Spectroscopy (EIS) data.</li>
-            </ul>
-          </div>
-        </div>
-      
-      <!-- <img
-      src="./assets/arrow.png"
-      alt="Arrow icon"
-      class="icon arrow"
-      onclick="location.href='./#skills'"
-    /> -->
-    <img
-  src="./assets/arrow.png"
-  alt="Arrow icon"
-  class="icon arrow"
-  onclick="scrollToNextSection(this)"
-/>
-
-    </section>
-
-    <section id="publications">
-      <p class="section__text__p1">Research Contributions</p>
-      <h1 class="title">Publications</h1>
-      <div class="publication-container">
-        <div class="publication-card">
-          <div class="card-header">
-            <h2 class="publication-title">
-              <a href="https://www.arxiv.org/abs/2409.03598" target="_blank">
-                <i class="fas fa-file-alt"></i> 
-                Towards a Practical Evaluation of Adversarial Robustness of Machine Learning Classifiers
-              </a>
-            </h2>
-            <p class="publication-source"> In Proceeding ASME 2024</p>
-          </div>
-          <div class="card-body">
-            <ul class="publication-highlights">
-              <li>Developed a novel adversarial distance estimation algorithm using iterative attacks.</li>
-              <li>Achieved up to 30-40% tighter perturbation bounds compared to traditional methods.</li>
-              <li>Presented at IMECE 2024, showcasing improved robustness evaluation.</li>
-            </ul>
-            <p class="github-link">
-              <a href="LINK_TO_YOUR_GITHUB_REPO" target="_blank">
-                <i class="fab fa-github"></i> 
-                View on GitHub
-              </a>
-            </p>
-          </div>
-        </div>
-    
-        <div class="publication-card">
-          <div class="card-header">
-            <h2 class="publication-title">
-              <a href="https://www.researchgate.net/publication/361974656_Design_of_circularly_polarized_irregular_octagonal_shaped_and_dumbbell_slotted_planar_and_conformal_patch_antenna" target="_blank">
-                <i class="fas fa-file-alt"></i> 
-                Design of Circularly Polarized Irregular Octagonal Shaped and Dumbbell Slotted Antennas
-              </a>
-            </h2>
-            <p class="publication-source">In Proceeding SCI 2021</p>
-          </div>
-          <div class="card-body">
-            <ul class="publication-highlights">
-              <li>Designed circularly polarized planar and conformal patch antennas.</li>
-              <li>Optimized polarization and impedance bandwidth for high-frequency applications.</li>
-              <li>Highlighted robust circular polarization in various configurations.</li>
-            </ul>
-            <p class="github-link">
-              <a href="LINK_TO_YOUR_GITHUB_REPO" target="_blank">
-                <i class="fab fa-github"></i> 
-                View on GitHub
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-  src="./assets/arrow.png"
-  alt="Arrow icon"
-  class="icon arrow"
-  onclick="scrollToNextSection(this)"
-/>
-
-    </section>
-    
-    
-    
-    
-    
     <section id="skills">
-      <p class="section__text__p1">Take a Look At My</p>
+      <p class="section__text__p1">Explore My</p>
       <h1 class="title">Skills</h1>
-      <div class="experience-details-container">
+      <div class="skills-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Software and Web Development</h2>
+            <h2 class="skills-sub-title">Software and Web Development</h2>
             <div class="article-container">
               <article>
                 <img
-                  src="./assets/git_icon.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/ibm_lsf_icon.png"
-                  alt="Experience icon"
+                  src="assets/ibm_lsf_icon.png"
+                  alt="skills icon"
                   class="icon"
                 />
                 <div>
@@ -369,30 +137,41 @@
               </article>
               <article>
                 <img
-                  src="./assets/pytorch_icon.png"
-                  alt="Experience icon"
+                  src="assets/pytorch_icon.png"
+                  alt="skills icon"
                   class="icon"
                 />
                 <div>
                   <h3>PyTorch</h3>
-                  <p>Intermediate</p>
+                  <p>Experienced</p>
                 </div>
               </article>
               <article>
                 <img
-                  src="./assets/tensorflow_icon.png"
-                  alt="Experience icon"
+                  src="assets/tensorflow_icon.png"
+                  alt="skills icon"
                   class="icon"
                 />
                 <div>
-                  <h3>Tensorflow</h3>
+                  <h3>TensorFlow</h3>
                   <p>Basic</p>
                 </div>
               </article>
               <article>
                 <img
-                  src="./assets/simulink_icon.png"
-                  alt="Checkmark icon"
+                  src="assets/aws_sagemaker.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>AWS SageMaker</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets/simulink_icon.png"
+                  alt="skills icon"
                   class="icon"
                 />
                 <div>
@@ -402,24 +181,24 @@
               </article>
               <article>
                 <img
-                  src="./assets/simpack_icon.png"
-                  alt="Checkmark icon"
+                  src="assets/simpack_icon.png"
+                  alt="skills icon"
                   class="icon"
                 />
                 <div>
-                  <h3>SimPack</h3>
+                  <h3>Simpack</h3>
                   <p>Basic</p>
                 </div>
               </article>
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Programming Languages and OS</h2>
+            <h2 class="skills-sub-title">Programming Languages and OS</h2>
             <div class="article-container">
               <article>
                 <img
-                  src="./assets/python_icon.png"
-                  alt="Checkmark icon"
+                  src="assets/python_icon.png"
+                  alt="skills icon"
                   class="icon"
                 />
                 <div>
@@ -429,19 +208,19 @@
               </article>
               <article>
                 <img
-                  src="./assets/matlab_icon.png"
-                  alt="Checkmark icon"
+                  src="assets/matlab_icon.png"
+                  alt="skills icon"
                   class="icon"
                 />
                 <div>
-                  <h3>Matlab</h3>
+                  <h3>MatLab</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
               <article>
                 <img
-                  src="./assets/cpp_icon.png"
-                  alt="Checkmark icon"
+                  src="assets/cpp_icon.png"
+                  alt="skills icon"
                   class="icon"
                 />
                 <div>
@@ -451,30 +230,30 @@
               </article>
               <article>
                 <img
-                  src="./assets/aws_sagemaker.png"
-                  alt="Checkmark icon"
+                  src="assets/git_icon.png"
+                  alt="skills icon"
                   class="icon"
                 />
                 <div>
-                  <h3>AWS SageMaker</h3>
+                  <h3>Git</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
               <article>
                 <img
-                  src="./assets/linux_ixon.png"
-                  alt="Checkmark icon"
+                  src="assets/linux_ixon.png"
+                  alt="skills icon"
                   class="icon"
                 />
                 <div>
                   <h3>Linux</h3>
-                  <p>Intermediate</p>
+                  <p>Experienced</p>
                 </div>
               </article>
               <article>
                 <img
-                  src="./assets/ros2_icon.png"
-                  alt="Experience icon"
+                  src="assets/ros2_icon.png"
+                  alt="skills icon"
                   class="icon"
                 />
                 <div>
@@ -486,79 +265,98 @@
           </div>
         </div>
       </div>
-      <!-- <img
+      <img
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#projects'"
-      /> -->
-      <img
-  src="./assets/arrow.png"
-  alt="Arrow icon"
-  class="icon arrow"
-  onclick="scrollToNextSection(this)"
-/>
-
+      />
     </section>
-    
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
+      <div class="skills-details-container">
         <div class="about-containers">
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/image.png"
+                src="assets/project1_im.png"
                 alt="Project 1"
                 class="project-img"
-                style="width: 500px; height: auto;"
               />
             </div>
-            <h2 class="project-title">Structured Comparison of Metrics to Evaluate the Robustness of Image Classification Models</h2>
+            <h2 class="skills-sub-title project-title">Structured Comparison of Metrics to Evaluate the Robustness of Image Classification Models</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/EkagraGupta/Forschungsarbeit-Structured-Comparison-of-Metrics-to-Evaluate-the-Robustness-of-Image-Classifiers.git'"
+                onclick="location.href='https://github.com/EkagraGupta/ForschungsArbeit.git'"
               >
                 Github
               </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://colab.research.google.com/drive/1gBwYimWIdaxope-nU9W6oqQmyiUIYQvS?usp=sharing'"
+              >
+                Notebook
+              </button>
             </div>
           </div>
-          <div class="details-container color-container">
+          <!-- <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/imece_proj.png"
+                src="./assets/project-2.png"
                 alt="Project 2"
                 class="project-img"
-                style="width: auto; height: 400px;"
               />
             </div>
-            <h2 class="project-title">A Practical Approach to Evaluate the Adversarial Distance for Machine Learning Classifiers</h2>
+            <h2 class="skills-sub-title project-title">Project Two</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Georgsiedel/adversarial-distance-estimation'"
+                onclick="location.href='https://github.com/'"
               >
                 Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div> -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets/project2_im.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">Deep Convolutional Generative Adversarial Network</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/EkagraGupta/DCGAN-Model'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://colab.research.google.com/drive/1QWTu6mewiA-nKTAI79XvdhRb6OKH0CoH?usp=sharing'"
+              >
+                Notebook
               </button>
             </div>
           </div>
         </div>
       </div>
-      <!-- <img
+      <img
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#contact'"
-      /> -->
-      <img
-  src="./assets/arrow.png"
-  alt="Arrow icon"
-  class="icon arrow"
-  onclick="scrollToNextSection(this)"
-/>
-
+      />
     </section>
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
@@ -570,7 +368,7 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:ekagrag99@gmail.com">ekagrag99@gmail.com</a></p>
+          <p><a href="mailto:ekagrag99@@gmail.com">ekagrag99@@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
           <img
@@ -578,7 +376,7 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com/in/ekagra-gupta-119003177?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BQM1ifiSfQROv6ec895jCsg%3D%3D">LinkedIn</a></p>
+          <p><a href="https:linkedin.com/in/ekagra-gupta-119003177">LinkedIn</a></p>
         </div>
       </div>
     </section>
@@ -587,8 +385,6 @@
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#publications">Publications</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>

@@ -66,29 +66,6 @@ a:hover {
   cursor: default;
 }
 
-
-
-/* General style for the arrow */
-.arrow {
-  width: 40px; /* Size of the arrow */
-  height: 40px;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000; /* Makes sure the arrow stays on top */
-  cursor: pointer;
-}
-
-.arrow:hover {
-  transform: scale(1.1); /* Enlarge on hover */
-  transition: transform 0.3s ease-in-out;
-}
-
-.arrow img {
-  filter: invert(100%); /* Turns the arrow black */
-}
-
-
 /* HAMBURGER MENU */
 
 #hamburger-nav {
@@ -190,8 +167,6 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
-  margin-top: -15px;
-  position: relative;
 }
 
 .section__pic-container {
@@ -223,17 +198,6 @@ section {
   font-size: 3rem;
   text-align: center;
 }
-.icon {
-  position: relative;  /* Make the arrows position relative to the nearest positioned ancestor */
-  cursor: pointer;     /* Change the cursor to indicate it's clickable */
-}
-
-/* .arrow {
-  position: relative;
-  right: -5rem;
-  bottom: 5rem;
-  margin-bottom: -5rem;
-} */
 
 #socials-container {
   display: flex;
@@ -297,13 +261,10 @@ section {
   gap: 1rem;
 }
 
-
 /* ABOUT SECTION */
 
 #about {
   position: relative;
-  padding-top: 10rem; /* Adjust as needed */
-  margin: 0 10rem; /* Ensure this matches other sections */
 }
 
 .about-containers {
@@ -315,7 +276,6 @@ section {
 .about-details-container {
   justify-content: center;
   flex-direction: column;
-  font-size: 1.2em;
 }
 
 .about-containers,
@@ -328,12 +288,12 @@ section {
 }
 
 .arrow {
-  position: relative;
+  position: absolute;
   right: -5rem;
-  bottom: 20rem;
+  bottom: 2.5rem;
 }
 
-.another-details-container {
+.details-container {
   padding: 1.5rem;
   flex: 1;
   background: white;
@@ -348,34 +308,26 @@ section {
   height: 80%;
 }
 
-.section-container {
-  display: flex;
-  gap: 4rem;
-  height: auto; /* Allow height to adjust based on content */
-}
-
 .section__pic-container {
   height: 400px;
   width: 400px;
   margin: auto 0;
 }
 
-/* EXPERIENCE SECTION */
+/* SKILLS SECTION */
 
-#experience {
+#skills {
   position: relative;
-  margin-top: 4rem;
 }
 
-.experience-sub-title {
+.skills-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
-  margin-top: 4rem
 }
 
-.experience-details-container {
+.skills-details-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -392,7 +344,6 @@ section {
 
 article {
   display: flex;
-  align-items: center;
   width: 10rem;
   justify-content: space-around;
   gap: 0.5rem;
@@ -415,24 +366,19 @@ article .icon {
 
 .project-img {
   border-radius: 2rem;
-  width: 70%;
-  height: 70%;
+  width: 90%;
+  height: 90%;
 }
 
 .project-title {
   margin: 1rem;
   color: black;
-  text-align: center;
-  margin-bottom: 1.5rem;
 }
 
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
-  flex: auto;
 }
-
-
 
 /* CONTACT */
 
@@ -483,321 +429,4 @@ footer {
 
 footer p {
   text-align: center;
-}
-
-/* General section styling */
-#skills {
-  padding: 50px 20px; 
-  margin: 0 auto;
-  background-color: white;
-  position: relative; /* Ensure relative positioning for arrow */
-  min-height: 100vh; /* Ensure the section takes full height of the viewport */
-}
-/* Container styling */
-.experience-details-container {
-  max-width: 1200px; /* Limit content width */
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap; /* Allows for responsive stacking */
-  gap: 14rem; /* Space between containers */
-}
-
-/* Details container */
-.details-container {
-  flex: 1 1 300px; /* Responsive sizing */
-  background: white; /* White background for the details */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  padding: 3rem; /* Inner padding */
-  transition: box-shadow 0.3s ease; /* Smooth shadow transition */
-  min-height: 400px;
-}
-
-/* Hover effect for details container */
-.details-container:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
-}
-
-/* Title styling */
-.excperience-sub-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #333; /* Dark gray for the title */
-  margin-bottom: 5rem; /* Space below title */
-}
-
-/* Article container for skill items */
-.article-container {
-  display: flex;
-  flex-direction: row; /* Change to row for horizontal layout */
-  gap: 4rem; /* Space between each skill item */
-  margin-top: 2rem; /* Space above the skills */
-}
-
-/* Article styling */
-article {
-  display: flex; /* Flex for icon and text */
-  align-items: center; /* Center align items */
-  flex: 1; /* Equal space for each article */
-}
-
-/* Icon styling */
-.icon {
-  width: 50px; /* Increased icon size */
-  height: auto; /* Keep aspect ratio */
-  margin-right: 10px; /* Space between icon and text */
-}
-
-/* Heading for each skill */
-h3 {
-  font-size: 1.4rem; /* Increased font size for skill names */
-  color: #444; /* Darker gray for skill names */
-  margin: 0; /* Reset margin */
-}
-
-/* Paragraph for skill levels */
-p {
-  font-size: 1rem; /* Increased font size for skill levels */
-  color: #666; /* Medium gray for levels */
-  margin: 0; /* Reset margin */
-}
-
-/* Arrow icon styling */
-.arrow {
-  position: absolute; 
-  right: 0; /* Position at the right */
-  bottom: 2rem; /* Adjust bottom position */
-  cursor: pointer; /* Change cursor to pointer */
-  width: 40px; /* Uniform size for the arrow */
-  height: auto; /* Maintain aspect ratio */
-}
-
-/* Additional responsiveness */
-@media (max-width: 600px) {
-  .experience-details-container {
-    flex-direction: column; /* Stack vertically on small screens */
-  }
-}
-
-
-/* Experience Card Styling */
-.experience-card {
-  position: relative;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  padding: 0.25rem 1.5rem;
-  max-width: 100%; /* Adjusts to the full width of the container */
-  margin: 1.5rem auto;
-  text-align: left; /* Aligns content to the left */
-}
-
-.experience-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-/* Flexbox for Title, Company, and Duration */
-.experience-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start; /* Align items to the top */
-  margin-bottom: 0.5rem;
-}
-
-/* Title and Company in column layout */
-.experience-info {
-  display: flex;
-  flex-direction: column;
-}
-
-.experience-sub-title {
-  font-size: 1.75rem;
-  font-weight: 600;
-  color: black;
-  margin: 0; /* Removes extra margin */
-}
-
-/* Company Name Styling */
-.company-name {
-  font-size: 1rem;
-  color: rgb(85, 85, 85);
-  margin-top: 0.25rem; /* Adds small margin under title */
-  margin-bottom: 0.5rem; /* Space between company and next element */
-}
-
-/* Duration on the right side */
-.duration {
-  font-size: 0.9rem;
-  color: rgb(135, 135, 135);
-  margin-left: 1rem; /* Adds space between info and date */
-}
-
-/* On hover, company name and duration will change color */
-.experience-card:hover .company-name, 
-.experience-card:hover .duration {
-  color: black;
-}
-
-/* For card body details */
-.card-body {
-  opacity: 0;
-  max-height: 0;
-  transition: all 0.5s ease-in-out;
-  overflow: hidden;
-  padding: 0;
-}
-
-.experience-card:hover .card-body {
-  opacity: 1;
-  max-height: 500px;
-  padding: 1rem 0;
-}
-
-/* Experience Summary */
-.experience-summary {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  color: rgb(85, 85, 85);
-}
-
-.experience-highlights {
-  list-style-type: disc;
-  padding-left: 1.5rem;
-  color: rgb(85, 85, 85);
-}
-
-.experience-highlights li {
-  margin-bottom: 0.5rem;
-  font-size: 0.95rem;
-}
-
-/* Title Alignment */
-.title {
-  margin-bottom: 2rem; /* Adjusted to give space between the title and cards */
-}
-
-#skills .arrow {
-  position: absolute;
-  right: 20px; /* Adjust arrow positioning */
-  bottom: 20px; /* Space from bottom */
-  width: 40px;
-  height: auto;
-  cursor: pointer;
-}
-/* General section styling */
-/* General section styling */
-
-#publications {
-  padding: 50px 20px; 
-  margin: 0 auto; /* Center section */
-  background-color: white; /* White background */
-  margin-top: 20rem;
-  position: relative; /* Ensure relative positioning for arrow */
-  min-height: 100vh; /* Ensure the section takes full height of the viewport */
-}
-
-/* Publication container styling */
-.publication-container {
-  display: flex; /* Flex layout */
-  flex-wrap: wrap; /* Allow wrapping of cards */
-  gap: 2rem; /* Space between cards */
-}
-
-
-/* Publication card styling */
-.publication-card {
-  background: #ffffff; /* White background for cards */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
-  padding: 2rem; /* Inner padding */
-  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
-  flex: 1 1 calc(33.33% - 2rem); /* Responsive sizing, three cards per row */
-  position: relative; /* Position for pseudo-elements */
-}
-
-/* Card hover effect */
-.publication-card:hover {
-  transform: translateY(-3px); /* Lift effect on hover */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
-}
-
-/* Card header styling */
-.card-header {
-  border-bottom: 2px solid #eee; /* Underline for separation */
-  padding-bottom: 1rem; /* Space below header */
-}
-
-/* Title styling */
-.publication-title {
-  font-size: 1.6rem; /* Larger font size for titles */
-  margin: 0.5rem 0; /* Space above and below title */
-  color: #222; /* Dark gray color for titles */
-}
-
-/* Publication source styling */
-.publication-source {
-  font-size: 1.8rem; /* Standard font size for publication source */
-  color: #555; /* Medium gray for source */
-}
-
-/* Card body styling */
-.card-body {
-  margin-top: 1rem; /* Space above body */
-}
-
-/* Highlight list styling */
-.publication-highlights {
-  list-style-type: none; /* Remove default list styling */
-  padding-left: 0; /* Reset padding */
-  margin-top: 0.5rem; /* Space above list */
-}
-
-/* List item styling */
-.publication-highlights li {
-  font-size: 2rem; /* Standard font size for list items */
-  color: #444; /* Darker gray for list item text */
-  margin-bottom: 0.5rem; /* Space between items */
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-  .publication-card {
-    flex: 1 1 calc(50% - 2rem); /* Two cards per row on medium screens */
-  }
-}
-
-@media (max-width: 600px) {
-  .publication-card {
-    flex: 1 1 100%; /* One card per row on small screens */
-  }
-}
-
-/* Arrow styling for consistency */
-.arrow {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  right: 20px; /* Uniform right positioning */
-  bottom: 20px; /* Uniform bottom positioning */
-  z-index: 1000; /* Ensures it stays on top */
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
-}
-
-.arrow:hover {
-  transform: scale(1.1); /* Uniform hover effect */
-}
-
-/* Skills section arrow positioning */
-#skills .arrow {
-  right: 180px; /* Same as general arrow */
-  bottom: 60px; /* Same as general arrow */
-}
-
-/* Publications section arrow positioning */
-#publications .arrow {
-  right: 180px; /* Same as general arrow */
-  bottom: 60px; /* Same as general arrow */
 }
